@@ -1,0 +1,147 @@
+/* profile.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile-header {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+}
+
+.profile-picture {
+    width: 80px;
+    /* Reduced size */
+    height: 80px;
+    /* Reduced size */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    /* Added space between picture and content */
+}
+
+.profile-details {
+    margin-left: 20px;
+}
+
+.profile-name {
+    font-size: 22px;
+    /* Slightly smaller */
+    font-weight: bold;
+}
+
+.profile-bio {
+    font-size: 14px;
+    color: #666;
+}
+
+.profile-stats {
+    display: flex;
+    margin: 10px 0;
+}
+
+.stats-item {
+    margin: 0 10px;
+    /* Reduced space */
+}
+
+.follow-button {
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    /* Adjusted padding */
+    cursor: pointer;
+    font-size: 14px;
+    /* Slightly smaller font size */
+}
+
+.profile-nav {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-button {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    border: none;
+}
+
+.nav-button.active {
+    background-color: #fff;
+    border-bottom: 2px solid #ff3366;
+}
+
+.profile-content {
+    padding: 20px;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.reels-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.reel-item {
+    flex: 1 1 calc(50% - 10px);
+    /* Adjusted to fit 2 videos per row */
+    box-sizing: border-box;
+}
+
+.reel-item video {
+    width: 100%;
+    height: 500px;
+    /* Adjusted height for 2:1 ratio */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.posts-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.post-item {
+    flex: 1 1 calc(33.333% - 10px);
+    box-sizing: border-box;
+}
+
+.post-item img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
